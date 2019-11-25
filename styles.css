@@ -16,7 +16,10 @@ p {
 }
 
 h1{
+    font-size: 1504x;
     text-align: center;
+    color: #F9EFAF;
+    -webkit-text-stroke: 1px orange;
 }
 
 #area{
