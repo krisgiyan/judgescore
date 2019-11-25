@@ -1,18 +1,29 @@
 body{
     padding: 5rem;
     padding-top: 0rem;
-    background-color: rgb(29, 75, 34);
+    background-color: rgb(29, 60, 34);
+
+}
+
+p {
+    text-align: center;
+}
+#divID {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
 h1{
     text-align: center;
 }
 
-textarea{
+#area{
     width:100%;
     direction:ltr;
     display:block;
-    max-width:100%;
+    max-width:40%;
     line-height:1.5;
     padding:15px 15px 30px;
     border-radius:10px;
@@ -46,5 +57,29 @@ button:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+#area2{
+    width:100%;
+    direction:ltr;
+    display:block;
+    max-width:40%;
+    line-height:1.5;
+    padding:15px 15px 30px;
+    border-radius:10px;
+    border:1px solid #F7E98D;
+    font:20px Tahoma, cursive;
+    transition:box-shadow 0.5s ease;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    font-smoothing:subpixel-antialiased;
+    background:linear-gradient(#F9EFAF, #F7E98D);
+    background:-o-linear-gradient(#F9EFAF, #F7E98D);
+    background:-ms-linear-gradient(#F9EFAF, #F7E98D);
+    background:-moz-linear-gradient(#F9EFAF, #F7E98D);
+    background:-webkit-linear-gradient(#F9EFAF, #F7E98D);
+
+}
+
+a {
+    color: rgb(29, 60, 34);
 }
 }
