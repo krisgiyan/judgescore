@@ -21,3 +21,24 @@ function copy() {
     document.execCommand('copy')
 
 }
+
+function pdfconvert() {
+    let final_array = []
+    let area = document.getElementById("area2").value
+    let split_area = area.split('\n')
+    for (let i = 0; i < split_area.length; i++) {
+        const areaElement = split_area  [i];
+        if (i%2 !== 0){
+            final_array.push(areaElement)
+        }
+
+    }
+    console.log(final_array.join('\n'))
+    document.getElementById('area2').value = final_array.join("\n")
+}
+
+function copy2() {
+    let text_field = document.getElementById('area2')
+    text_field.select()
+    document.execCommand('copy')
+}
