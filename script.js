@@ -41,8 +41,7 @@ function copy2() {
     text_field.select()
     document.execCommand('copy')
 }
-
-function clear() {
+function clearr() {
     document.getElementById('area').value=''
 }
 
