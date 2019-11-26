@@ -11,15 +11,8 @@ function convert() {
             .replace('J5: ', '')
         final_array.push(finish)
     }
-   console.log(final_array.join('\n'))
+  //console.log(final_array.join('\n'))
     document.getElementById('area').value = final_array.join("\n")
-}
-
-function copy() {
-    let text_field = document.getElementById('area')
-    text_field.select()
-    document.execCommand('copy')
-
 }
 
 function pdfconvert() {
@@ -33,12 +26,26 @@ function pdfconvert() {
         }
 
     }
-    console.log(final_array.join('\n'))
+    //console.log(final_array.join('\n'))
     document.getElementById('area2').value = final_array.join("\n")
+}
+
+function copy() {
+    let text_field = document.getElementById('area')
+    text_field.select()
+    document.execCommand('copy')
 }
 
 function copy2() {
     let text_field = document.getElementById('area2')
     text_field.select()
     document.execCommand('copy')
+}
+
+function clear() {
+    document.getElementById('area').value=''
+}
+
+function clear2() {
+    document.getElementById('area2').value=''
 }
