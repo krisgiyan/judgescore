@@ -9,9 +9,9 @@ function convert() {
             .replace('J3: ', '')
             .replace('J4: ', '')
             .replace('J5: ', '')
+            .replace('J5:', '')
         final_array.push(finish)
     }
-  //console.log(final_array.join('\n'))
     document.getElementById('area').value = final_array.join("\n")
 }
 
@@ -20,13 +20,34 @@ function pdfconvert() {
     let area = document.getElementById("area2").value
     let split_area = area.split('\n')
     for (let i = 0; i < split_area.length; i++) {
-        const areaElement = split_area  [i];
-        if (i%2 !== 0){
-            final_array.push(areaElement)
+        const areaElement = split_area[i];
+        let elem = document.getElementById('name_convert').checked
+        if (elem === false){
+            if (i%2 !== 0){
+                final_array.push(areaElement)
+            }
+        }
+        else {
+            if (i%2 === 0){
+                final_array.push(areaElement)
+            }
+
         }
 
     }
-    //console.log(final_array.join('\n'))
+    let reverse_check = document.getElementById('reverse').checked
+    if(reverse_check === true){
+        for (let i = 0; i < final_array.length; i++) {
+            const finalArrayElement = final_array[i];
+            let new_arr = final_array[i].split(' ')
+            let poped = new_arr.pop()
+            new_arr.unshift(poped)
+            let new_arrr = new_arr.join(" ")
+            final_array[i] = new_arrr
+
+
+        }
+    }
     document.getElementById('area2').value = final_array.join("\n")
 }
 
@@ -48,3 +69,4 @@ function clearr() {
 function clear2() {
     document.getElementById('area2').value=''
 }
+
