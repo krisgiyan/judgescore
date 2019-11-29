@@ -70,3 +70,31 @@ function clear2() {
     document.getElementById('area2').value=''
 }
 
+function test_names() {
+    let final_arr = []
+    let value = document.getElementById('area2').value
+    let masiv = value.split('\n')
+    for (let i = 0; i < masiv.length; i++) {
+        const masivElement = masiv[i];
+        let maluk_masiv = masivElement.split(' ')
+        let last_element = maluk_masiv[maluk_masiv.length - 1]
+        let last_element_lenght = last_element.length
+        if (last_element_lenght === 3) {
+            maluk_masiv.pop()
+            final_arr.push(maluk_masiv.join(' '))
+        }
+
+        }
+    let reverse_check = document.getElementById('reverse').checked
+    if (reverse_check === true) {
+        for (let i = 0; i < final_arr.length; i++) {
+            let new_arr = final_arr[i].split(' ')
+            let shifted = new_arr.shift()
+            new_arr.push(shifted)
+            final_arr[i] = new_arr.join(" ")
+        }
+        document.getElementById('area2').value = final_arr.join('\n')
+    }
+    document.getElementById('area2').value = final_arr.join('\n')
+}
+
