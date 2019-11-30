@@ -40,8 +40,8 @@ function pdfconvert() {
         for (let i = 0; i < final_array.length; i++) {
             const finalArrayElement = final_array[i];
             let new_arr = final_array[i].split(' ')
-            let poped = new_arr.pop()
-            new_arr.unshift(poped)
+            let poped = new_arr.shift()
+            new_arr.push(poped)
             let new_arrr = new_arr.join(" ")
             final_array[i] = new_arrr
 
