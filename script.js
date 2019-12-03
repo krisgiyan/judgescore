@@ -80,8 +80,16 @@ function test_names() {
         let last_element = maluk_masiv[maluk_masiv.length - 1]
         let last_element_lenght = last_element.length
         if (last_element_lenght === 3) {
-            maluk_masiv.pop()
-            final_arr.push(maluk_masiv.join(' '))
+            if (maluk_masiv.includes('U23')){
+                for(let i = 0; i < 2; i++){
+                    maluk_masiv.pop()
+                }
+                final_arr.push(maluk_masiv.join(' '))
+            }
+            else {
+                maluk_masiv.pop()
+                final_arr.push(maluk_masiv.join(' '))
+            }
         }
 
         }
