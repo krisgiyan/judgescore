@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cross Country</title>
+    <link rel="stylesheet" href="cc-styles.css">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
+</head>
+<body>
+<script src="cc-script.js"></script>
+<script src="script.js"></script>
+<a href="index.html" ><h1>CROSS COUNTRY</h1></a>
+<div id="left">
+    <textarea name="" class="area" cols="50" rows="28" id="area"></textarea>
+    <div class="div_buttons">
+        <button onclick="spocoto_cc()">Results Convert</button>
+        <button onclick="copy()">Copy</button>
+        <button onclick="clearr()" class="clear_button">Clear</button>
+        <div class="div_buttons" id="down_left">
+            <p><h1 id="h11">Инструкции</h1></p>
+            <p><img src="cross-country-guide-1st-img.JPG" alt="Тук трябваше да има screenshot..."></p>
+            <p class="guide-text">Когато копирате от PDF файла по горепосочения начин, при натискане на бутона Results Convert,
+                резултатие и ранкингите ще станат в същия
+            формат както при копиране на съответната колона с ColumnCopy през Event Results.</p>
+            <p class="guide-text">След това може да ги сравните с
+                <a href="http://text-compare.com/" target="_blank" class="guide-text">Text-Compare</a>.</p>
+            <p class="guide-text">Ако имате празно поле като, ↓ </p>
+            <p><img src="cross-country-guide-2nd-img.JPG" alt="Тук трябваше да има screenshot..."></p>
+            <p class="guide-text">добавяйте един ред на мястото на празното място за да може да продължи да проверява надолу ред по ред.</p>
+        </div>
+    </div>
+</div>
+<div id="right">
+    <textarea name="" class="area" cols="50" rows="28" id="area2"></textarea>
+    <div class="div_buttons">
+        <button onclick="test_names()">Names Convert</button>
+        <button onclick="copy2()">Copy</button>
+        <button onclick="clear2()" class="clear_button">Clear</button>
+        <form>
+            <input type="checkbox" id="reverse" name="reverse">
+            <label for="reverse">Do not reverse Family Name</label>
+        </form>
+        <div class="div_buttons" id="down_right">
+            <p><h1 id="h12">Инструкции</h1></p>
+            <p><img src="cross-country-names-guide-1st-img.JPG" alt="Тук трябваше да има screenshot..."></p>
+            <p class="guide-text">Това поле е с цел по-лесна проверка на участниците.</p>
+            <p class="guide-text">Когато копирате от PDF файла по горепосочения начин(задължително заедно с държавата и датата на раждане!),
+                при натискане на бутона Names Convert,
+                ще останат само имената.</p>
+            <p class="guide-text">След това ги минавате през <a href="http://text-compare.com/" target="_blank" class="guide-text">Text-Compare</a>.</p>
+            <p class="guide-text">Направил съм го да слага фамилите най-отзад, но ако има някой с повече от 2 имена, ↓</p>
+            <p><img src="cross-country-names-guide-2nd-img.JPG" alt="Тук трябваше да има screenshot..."></p>
+            <p class="guide-text">най-вероятно няма да ги подреди както трябва. 😕</p>
+        </div>
+    </div>
+
+</body>
+</html>
