@@ -8,7 +8,7 @@
 </head>
 <body>
 <script src="script.js"></script>
-<h1>JUDGES SCORES</h1>
+<a href="cross-country.html"><h1>JUDGES SCORES</h1></a>
 <div id="left">
     <textarea name="" class="area" cols="50" rows="28" id="area"></textarea>
     <div class="div_buttons">
@@ -23,12 +23,11 @@
         <button onclick="pdfconvert()">PDF Convert</button>
         <button onclick="copy2()">Copy</button>
         <button onclick="clear2()" class="clear_button">Clear</button>
-        <button onclick="test_names()" class="clear_button" id="testtt" >TEST</button>
     </div>
     <div id="radio">
         <form>
             <input type="checkbox" id="name_convert" name="name_convert">
-            <label for="name_convert">Names Convert</label>
+            <label for="name_convert">Removes every second row</label>
             <input type="checkbox" id="reverse" name="reverse">
             <label for="reverse">Reverse Family Name</label>
         </form>
