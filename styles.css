@@ -10,6 +10,9 @@ h1 {
     color: #F9EFAF;
     -webkit-text-stroke: 3px orange;
     letter-spacing: 1.3rem;
+    background-color: rgb(29, 90, 100);
+    display: ruby-text;
+    max-width:90%;
 }
 
 .container{
@@ -136,6 +139,6 @@ input[type=checkbox]:checked:disabled + label:before {
     border-color: #bfb;
 }
 
-#testtt{
-    background-color: red;
+a {
+    text-decoration: none;
 }
