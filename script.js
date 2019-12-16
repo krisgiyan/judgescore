@@ -94,7 +94,7 @@ function test_names() {
 
         }
     let reverse_check = document.getElementById('reverse').checked
-    if (reverse_check === true) {
+    if (reverse_check !== true) {
         for (let i = 0; i < final_arr.length; i++) {
             let new_arr = final_arr[i].split(' ')
             let shifted = new_arr.shift()
