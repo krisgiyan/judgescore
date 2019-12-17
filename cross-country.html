@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <title>Cross Country</title>
     <link rel="stylesheet" href="cc-styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="navigation-styles.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 </head>
 <body>
 <script src="cc-script.js"></script>
 <script src="script.js"></script>
 <a href="index.html" ><h1>CROSS COUNTRY</h1></a>
+<div id='cssmenu'>
+    <ul>
+        <li><a href='index.html'><span>Ski Jumping</span></a></li>
+        <li class="active"><a href='cross-country.html'><span>Cross Country</span></a></li>
+    </ul>
+</div>
 <div id="left">
     <textarea name="" class="area" cols="50" rows="28" id="area"></textarea>
     <div class="div_buttons">
@@ -17,7 +28,7 @@
         <button onclick="copy()">Copy</button>
         <button onclick="clearr()" class="clear_button">Clear</button>
         <div class="div_buttons" id="down_left">
-            <p><h1 id="h11">Инструкции</h1></p>
+            <p><h2 id="h11">Инструкции</h2></p>
             <p><img src="cross-country-guide-1st-img.JPG" alt="Тук трябваше да има screenshot..."></p>
             <p class="guide-text">Когато копирате от PDF файла по горепосочения начин, при натискане на бутона Results Convert,
                 резултатите и ранкингите ще станат в същия
@@ -41,7 +52,7 @@
             <label for="reverse">Do not reverse Family Name</label>
         </form>
         <div class="div_buttons" id="down_right">
-            <p><h1 id="h12">Инструкции</h1></p>
+            <p><h2 id="h12">Инструкции</h2></p>
             <p><img src="cross-country-names-guide-1st-img.JPG" alt="Тук трябваше да има screenshot..."></p>
             <p class="guide-text">Това поле е с цел по-лесна проверка на участниците.</p>
             <p class="guide-text">Когато копирате от PDF файла по горепосочения начин(задължително заедно с държавата и датата на раждане!),
